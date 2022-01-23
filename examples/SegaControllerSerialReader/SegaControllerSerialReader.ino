@@ -59,18 +59,18 @@ void sendState()
     if (currentState != lastState)
     {
         Serial.print((currentState & SC_CTL_ON)    ? "+" : "-");
-        Serial.print((currentState & SC_BTN_UP)    ? "U" : "0");
-        Serial.print((currentState & SC_BTN_DOWN)  ? "D" : "0");
-        Serial.print((currentState & SC_BTN_LEFT)  ? "L" : "0");
-        Serial.print((currentState & SC_BTN_RIGHT) ? "R" : "0");
-        Serial.print((currentState & SC_BTN_START) ? "S" : "0");
-        Serial.print((currentState & SC_BTN_A)     ? "A" : "0");
-        Serial.print((currentState & SC_BTN_B)     ? "B" : "0");
-        Serial.print((currentState & SC_BTN_C)     ? "C" : "0");
-        Serial.print((currentState & SC_BTN_X)     ? "X" : "0");
-        Serial.print((currentState & SC_BTN_Y)     ? "Y" : "0");
-        Serial.print((currentState & SC_BTN_Z)     ? "Z" : "0");
-        Serial.print((currentState & SC_BTN_MODE)  ? "M" : "0");
+        Serial.print((currentState & SC_BTN_UP)    ? "U" : "");
+        Serial.print((currentState & SC_BTN_DOWN)  ? "D" : "");
+        Serial.print((currentState & SC_BTN_LEFT)  ? "L" : "");
+        Serial.print((currentState & SC_BTN_RIGHT) ? "R" : "");
+        Serial.print((currentState & SC_BTN_START) ? "S" : "");
+        Serial.print((currentState & SC_BTN_A)     ? "A" : "");
+        Serial.print((currentState & SC_BTN_B)     ? "B" : "");
+        Serial.print((currentState & SC_BTN_C)     ? "C" : "");
+        Serial.print((currentState & SC_BTN_X)     ? "X" : "");
+        Serial.print((currentState & SC_BTN_Y)     ? "Y" : "");
+        Serial.print((currentState & SC_BTN_Z)     ? "Z" : "");
+        Serial.print((currentState & SC_BTN_MODE)  ? "M" : "");
 
         Serial.print("\n");
         lastState = currentState;
